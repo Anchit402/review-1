@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(background.jfif);
+    background-size: cover;
+}
+#logo img {
+    height: 20rem;
+    width: 24rem;
+    opacity: 0.5;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background-image: url(background.jfif);
+    background-size: contain;
+    margin: 0;
+}
+#heading {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 65px;
+    opacity: 0.5;
+}
+#navigation ul li {
+    display: inline;
+}
+#navigation ul li a {
+    color: white;
+    text-decoration-color: non;
+    padding: 10px 34px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 600;
+    transition: 0.5s;
+}
+#navigation ul li a:hover{
+    color: blue;
+    background-color: white;
+}
+#navigation {
+    margin: 0 10%;
+    background-color: blue;
+    opacity: 0.5;
+    transition: 1s;;
+}
+#destination {
+    margin: 10px 10%;
+}
+#destination #hokkaido p{
+    text-align: center;
+}
+#destination #hokkaido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: left;
+    border: solid blue 1px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#destination #tohoku p{
+    text-align: center;
+}
+#destination #tohoku {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    float: left;
+    border: solid blue 1px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#destination #kanto p{
+    text-align: center;
+}
+#destination #kanto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: left;
+    border: solid blue 1px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#destination #kansai p{
+    text-align: center;
+}
+#destination #kansai {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    float: left;
+    border: solid blue 1px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#things {
+    margin: 0 10%;
+}
+#things #h{
+    text-align: center;
+    font-size: 50px;
+    opacity: 0.5;
+}
+#things #a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#things #b {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#things #abc {
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+#things #abc:hover {
+    transform: scale(1.2);
+}
+#things button {
+    height: auto;
+    width: auto;
+}
+#plan {
+    margin: 0 10%;
+}
+#plan #headi {
+    text-align: center;
+    font-size: 70px;
+    opacity: 0.5;
+}
+#plan #para {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 1000;
+    opacity: 0.7;
+}
+#plan #lang,#card,#wifi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#plan #lang,#card,#wifi p {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+#plan #lang img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+#plan #card img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+#plan #wifi img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+#blog {
+    margin: 0 10% 10px 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid blue 1px;
+    border-radius: 20%;
+}
+#blog img {
+    height: 200px;
+    width: 300px;
+    border-radius: 20%;
+}
+#blog #title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#blog #title #blog-title {
+    font-size: 3rem;
+}
+#blog #title #date {
+    opacity: 0.5;
+    font-size: 1.5rem;
+}
+#blog #title #description {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1219px) {
+    #destination #hokkaido img {
+        height: 250px;
+        width: 240px;
+    }
+    #destination #kansai img {
+        height: 250px;
+        width: 240px;
+    }
+    #destination #tohoku img{
+        height: 250px;
+        width: 250px;
+    }
+    #destination #kanto img{
+        height: 250px;
+        width: 250px;
+    }
+    #destination #hokkaido,#kanto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #destination #kansai {
+        display: flex;
+        flex-direction: column;
+    }
+    #destination #tohoku {
+        display: flex;
+        flex-direction: column;
+    }
+    #things #a {
+        display: grid;
+    }
+    #things #b {
+        display: grid;
+    }
+    #things #abc {
+        margin-top: 20px;
+    }
+    #things {
+        margin: 0 0;
+    }
+    #blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        margin: 0 0;
+        overflow: none;
+    }
+    #blog img {
+        height: 250px;
+        width: 250px;
+        padding: 20px;
+    }
+    #blog #title #blog-title {
+        font-size: 25px;
+    }
+    #blog #title #date {
+        font-size: 10px;
+    }
+    #blog #title #description {
+        font-size: 20px;
+    }
+    #plan #lang,#card {
+        display: block;
+    }
+    #plan #wifi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #navigation ul {
+        display: block;
+    }
+    #navigation {
+        margin: 0 0;
+    }
+    #heading {
+        font-size: 45px;
+    }
+    #logo img {
+        height: 250px;
+        width: 250px;
+    }
+    #plan #headi {
+        font-size: 45px;
+    }
+}
